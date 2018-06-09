@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/jshom/kubernetes-nodejs-test/issues"
   },
-  "homepage": "https://github.com/jshom/kubernetes-nodejs-test#readme"
+  "homepage": "https://github.com/jshom/kubernetes-nodejs-test#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }

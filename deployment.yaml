@@ -1,0 +1,17 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: test-dooker
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        name: test-dooker
+    spec:
+      containers:
+      - name: test-dooker
+        image: gcr.io/test-dooker/github-jshom-kubernetes-nodejs-test@sha256:907aaf34e77432bf1a0642db53f802256f6eda2f7610475f8742ee63bcd0ac0b
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 4000
